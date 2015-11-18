@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Examples</title>
+</head>
+<body>
+
+
+<script src="../src/UTM_module.js"></script>
+
+<script>
+    // получение значения utm метки по ее имени
+    var utm_label = location.getUtmValueByID('utm_content');
+
+    // сохранение значения utm метки
+    var status = location.saveUtmToCookies('utm_content', utm_label);
+
+    console.log(utm_label, status);
+</script>
+</body>
+</html>
